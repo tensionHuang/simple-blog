@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.antena.blog.repository.model.Blog" table="Blog" lazy="false">
+        <id name="uid" column="blogUid" type="string">
+            <generator class="uuid">
+            </generator>
+        </id>
+        <property name="authorName" column="authorName" type="string" length="50" not-null="true" lazy="false"/>
+        <property name="title" column="title" type="string" length="50" not-null="true" lazy="false"/>
+        <property name="content" column="content" type="string" length="10000" lazy="false"/>
+        <property name="createDate" column="updateDate" type="timestamp" not-null="true" lazy="false"/>
+        <property name="updateDate" column="createDate" type="timestamp" not-null="true" lazy="false"/>
+        <property name="popularity" column="popularity" type="int" not-null="true" lazy="false"/>
+    </class>
+</hibernate-mapping>

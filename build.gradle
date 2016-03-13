@@ -1,0 +1,38 @@
+apply plugin: 'idea'
+
+allprojects {
+    apply plugin: 'eclipse'
+    apply plugin: 'eclipse-wtp'
+    group 'com.antena'
+    version '1.0-SNAPSHOT'
+}
+
+project.ext {
+    springVersion = '4.1.4.RELEASE'
+}
+
+subprojects {
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'maven'
+
+    dependencies {
+
+        testCompile 'junit:junit:4.11'
+        testCompile("org.springframework:spring-test:${project.springVersion}") {
+            exclude group: 'commons-logging'
+        }
+
+        compile 'commons-logging:commons-logging:1.2'
+        compile 'org.apache.logging.log4j:log4j-1.2-api:2.2'
+        compile 'org.apache.logging.log4j:log4j-api:2.2'
+        compile 'org.apache.logging.log4j:log4j-core:2.2'
+        compile 'org.apache.logging.log4j:log4j-jcl:2.2'
+        compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.2'
+        compile 'org.apache.logging.log4j:log4j-web:2.2'
+    }
+}

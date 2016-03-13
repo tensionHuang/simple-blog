@@ -1,0 +1,4 @@
+rootProject.name = 'simple-blog'
+include 'blog-repository-core'
+include 'blog-repository-interface'
+
