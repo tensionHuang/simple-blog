@@ -1,0 +1,13 @@
+apply plugin: 'war'
+
+dependencies {
+
+    compile project(':blog-repository-core')
+    compile "org.springframework:spring-web:${project.springVersion}"
+    compile "org.springframework:spring-webmvc:${project.springVersion}"
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version:'1.2.2'
+    compile group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version:'1.2'
+    compile group: 'org.glassfish.web', name: 'jstl-impl', version:'1.2'
+    compile 'joda-time:joda-time:2.9.2'
+
+}

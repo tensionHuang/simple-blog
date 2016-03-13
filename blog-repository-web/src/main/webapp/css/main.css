@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.header-logo {
+    background: url("/img/logo.jpg");
+}
+
+.new-blog {
+    text-align: right;
+}
+
+.new-blog button{
+    font-size:30px;
+    width: 80%;
+    color: #eee;
+}

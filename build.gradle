@@ -7,11 +7,11 @@ allprojects {
     version '1.0-SNAPSHOT'
 }
 
-project.ext {
-    springVersion = '4.1.4.RELEASE'
-}
-
 subprojects {
+
+    project.ext {
+        springVersion = '4.1.4.RELEASE'
+    }
 
     repositories {
         mavenCentral()
