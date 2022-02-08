@@ -2,8 +2,8 @@
 <Configuration status="WARN">
 <Appenders>
     <RollingFile name="RollingFile"
-                 fileName="${sys:catalina.home}/neo_log/blog.log"
-                 filePattern="${sys:catalina.home}/neo_log/blog-%d{yyyy-MM-dd}-%i.log">
+                 fileName="${sys:catalina.home}/simple-blog/blog.log"
+                 filePattern="${sys:catalina.home}/simple-blog/blog-%d{yyyy-MM-dd}-%i.log">
         <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %logger{36}:%L - %msg%n"/>
         <Policies>
             <TimeBasedTriggeringPolicy />
@@ -19,6 +19,6 @@
         <AppenderRef ref="Console"/>
         <AppenderRef ref="RollingFile"/>
     </Root>
-    <Logger name="com.neo.career.app" level="info"/>
+    <Logger name="com.antena" level="info"/>
 </Loggers>
 </Configuration>

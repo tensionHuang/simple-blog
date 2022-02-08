@@ -1,7 +1,6 @@
 dependencies {
 
     compile project(':blog-repository-interface')
-    compile 'org.postgresql:postgresql:9.3-1101-jdbc4'
     compile "org.springframework:spring-oxm:${project.springVersion}"
     compile 'org.springframework:spring-test:4.1.4.RELEASE'
     compile 'org.springframework:spring-tx:4.1.4.RELEASE'
@@ -20,4 +19,7 @@ dependencies {
     compile 'org.hibernate:hibernate-c3p0:4.1.9.Final'
     compile 'org.hibernate:hibernate-core:4.1.9.Final'
     compile 'org.hibernate:hibernate-validator:4.3.0.Final'
+
+    compile 'org.postgresql:postgresql:42.3.2'
+    compile 'commons-io:commons-io:2.11.0'
 }

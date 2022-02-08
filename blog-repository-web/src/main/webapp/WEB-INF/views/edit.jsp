@@ -41,7 +41,7 @@
 
 <div class="well">
 
-    <sf:form method="POST" class="well" action="/neo-career-app-web/editBlog" enctype="multipart/form-data"
+    <sf:form method="POST" class="well" action="editBlog" enctype="multipart/form-data"
              modelAttribute="blog">
         <div class="form-group">
             <label for="author"><s:message code="blog.author"/>:</label>

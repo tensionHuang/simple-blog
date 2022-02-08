@@ -2,7 +2,7 @@ function showBlogCreatePanel() {
 
     var $target = $('#newBlogContent'),
         $button = $('#newBlogButton'),
-        url = '/neo-career-app-web/edit';
+        url = 'edit';
 
     $button.hide();
     $target.load(url, function (response, status, xhr) {
